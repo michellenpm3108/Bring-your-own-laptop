@@ -10,7 +10,6 @@ body {
 }
 
 .background {
-    min-height: 100vh;
     background-image: url("images/edgar-castrejon-vegan.jpg");
     background-color: #404040;
     background-blend-mode: overlay;
@@ -28,14 +27,14 @@ body {
 }
 .head {
     text-align: center;
-    margin: 2em auto;
+    margin-top: 1.5em;
 }
 .logo {
     height: 15vh; 
     object-fit: cover;
 }
 nav {
-    margin: 1em auto;
+    margin-top: 1em;
     background-color: rgba(95, 95, 95, 0.496);
     padding: .5em 1.5em;
 }
