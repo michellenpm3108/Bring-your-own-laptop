@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;   
+    min-width: 700px;
+    min-height: 100vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background {
+    height: 100vh;
+    background-image: url("images/edgar-castrejon-vegan.jpg");
+    background-color: #404040;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+}
+.container {
+    width: 90%;
+    min-height: 100vh;
+    margin: auto;
+    /* border: 1px red solid; */
+    display: flex;
+    flex-direction: column;
+}
+.head {
+    text-align: center;
+}
+.logo {
+    height: 15vh; 
+    object-fit: cover;
+}
+nav {
+    margin: 1em auto;
+    background-color: rgba(95, 95, 95, 0.496);
+    padding: .5em 1.5em;
+}
+nav ul {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+}
+nav li {
+    list-style: none;
+}
+nav li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .75rem;
+    color: white;
+    opacity: .6;
+}
+
+nav li a:hover,
+nav li a:focus {
+    opacity: 1;
+}
+main {
+    margin: 2em auto;
+    max-width: 60%;
+    text-align: center;
+}
+h1 {
+    font-size: 3rem;
+}
+.reserv-btn {
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 3px;
+    font-size: .75rem; 
+    margin: 1.5 em;
+}
+
+footer {
+    background-color: rgba(95, 95, 95, 0.496);
+    padding: 2em 3.5em;
+    text-align: center;
+    margin-top: auto;
+}
+footer p {
+    opacity: .6;
+}
