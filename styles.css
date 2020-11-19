@@ -78,7 +78,9 @@ h1 {
     font-size: .75rem; 
     margin: 1.5 em;
 }
-
+.youtube-clip {
+    margin: 2em auto;
+}
 footer {
     background-color: rgba(95, 95, 95, 0.496);
     padding: 1em 3.5em;
