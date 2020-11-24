@@ -8,7 +8,8 @@ body {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/* ----MAIN PAGE ----
+------ BACKGROUND ---- */
 .background {
     background-image: url("images/edgar-castrejon-vegan.jpg");
     background-color: #404040;
@@ -17,6 +18,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .container {
     width: 90%;
     min-height: 100vh;
@@ -25,6 +27,8 @@ body {
     display: flex;
     flex-direction: column;
 }
+/* ----MAIN PAGE ----
+------ TOP PART ---- */
 .head {
     text-align: center;
     margin-top: 1.5em;
@@ -33,6 +37,8 @@ body {
     height: 15vh; 
     object-fit: cover;
 }
+/* ----MAIN PAGE ----
+------ NAVIGATION---- */
 nav {
     margin-top: 1em;
     background-color: rgba(95, 95, 95, 0.496);
@@ -61,6 +67,8 @@ nav li a:hover,
 nav li a:focus {
     opacity: 1;
 }
+/* ----MAIN PAGE ----
+------ MAIN CONTENT ---- */
 main {
     margin: .5em auto;
     max-width: 60%;
@@ -81,6 +89,8 @@ h1 {
 .youtube-clip {
     margin: 2em auto;
 }
+/* ----MAIN PAGE ----
+------ FOOTER---- */
 footer {
     background-color: rgba(95, 95, 95, 0.496);
     padding: 1em 3.5em;
@@ -89,4 +99,36 @@ footer {
 }
 footer p {
     opacity: .6;
+}
+
+/* ----RESERVATION PAGE ----
+---------------------------- */
+.reservation-container {
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro {
+    width: 100vw;
+    height: 50vh;
+    background-image: url(images/unsplash.jpg);
+    background-color: #444444;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    color: rgb(245, 244, 244);
+    background-size: cover;
+    text-align: center;
+}
+.intro-logo {
+    width: 20%;
+    object-fit: cover;
+    margin-top: 1em;
+    text-align: center;
+}
+.intro h1{
+    max-width: 70%;
+    font-size: 2.25rem;
+    margin: 1.5em auto;
 }
