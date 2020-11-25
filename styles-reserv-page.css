@@ -1,5 +1,7 @@
 body {
     margin: 0 auto;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Raleway', sans-serif;
 }
 /* ----RESERVATION PAGE ----
 ---------------------------- */
@@ -13,27 +15,27 @@ body {
 /* ----RESERVATION PAGE ----
 --------INTRO PART --------- */
 .intro {
-    height: 50vh;
-    background-image: url(images/edgar-castrejon-vegan.jpg);
-    background-color: #555454;
+    height: 60vh;
+    background-image: url(images/maddi-bazzocco-qKbHvzXb85A-unsplash.jpg);
+    background-color: #818181;
     background-position: center;
     background-repeat: no-repeat;
-    background-blend-mode: overlay;
+    background-blend-mode:multiply;
     color: rgb(245, 244, 244);
     background-size: cover;
     text-align: center;
+
 }
 .intro-logo {
-    width: 7em;
+    width: 6em;
     object-fit: cover;
-    text-align: center;
     margin-top: .5em;
 }
 .intro-h1{
     max-width: 70%;
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 600;
-    margin: 1.5em auto;
+    margin: 2em auto;
     text-align: center;
 }
 .intro-h1 p {
@@ -43,22 +45,38 @@ body {
 /* ----RESERVATION PAGE ----
 ------MAIN CONTENT PART --- */
 .reservation-main-content {
+    width: 100%;
     text-align: center;
+    font-size: 1rem;
 }
+
+/* ----RESERVATION PAGE ----
+------ -INPUT & SUBMIT-------- */
 input {
     border-style: none;
-    /* border: .5px solid gray; */
-    background-color:rgba(128, 128, 128, 0.184);
+    background-color:rgba(144, 150, 173, 0.184);
     border-radius: 5px;
-    height: 1.7em;
+    height: 1.5em;
+    margin: .25em 0;
 }
+input[type=number] {
+    height: 1.3em;
+}
+
 .reserv-time-form {
-    padding: 0 1.5em;
+    margin: auto;
+    width: 70%;
+    /* padding: 0 2em; */
     display: flex;
     justify-content: space-between;
+    margin-bottom: 1em;
 }
-
-
+.reserv-contact-form {
+    margin-bottom: 1em;
+}
+.input-contact-form {
+    width: 50%;
+}
 .resto-contact-icon {
     width: 1.5em;
     object-fit: cover;
