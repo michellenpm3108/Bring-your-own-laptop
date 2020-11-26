@@ -79,12 +79,12 @@ input {
     margin: .25em 0;
 }
 input[type=number] {
-    height: 1.3em;
+    height: 1.55em;
 }
 
 .reserv-time-form {
     margin: 1em auto;
-    width: 70%;
+    max-width: 350px;
     /* padding: 0 2em; */
     display: flex;
     justify-content: space-between;
@@ -169,7 +169,6 @@ input[type=number] {
     }
     .reserv-time-form{
         width: 90%;
-        max-width: 400px;
         /* border: 1px solid magenta; */
     }
     .contact-time{
