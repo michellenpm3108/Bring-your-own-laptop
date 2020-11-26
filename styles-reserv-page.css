@@ -68,11 +68,14 @@ body {
 }
 /* ----RESERVATION PAGE ----
 ------ -INPUT & SUBMIT-------- */
+label {
+    font-size: .75rem;
+}
 input {
     border-style: none;
     background-color:rgba(144, 150, 173, 0.184);
     border-radius: 5px;
-    height: 1.5em;
+    height: 1.75em;
     margin: .25em 0;
 }
 input[type=number] {
@@ -166,7 +169,7 @@ input[type=number] {
     .reserv-time-form{
         width: 90%;
         max-width: 400px;
-        border: 1px solid magenta;
+        /* border: 1px solid magenta; */
     }
     .contact-time{
         background-color: white;
