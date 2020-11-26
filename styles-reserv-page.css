@@ -24,7 +24,13 @@ body {
     color: rgb(245, 244, 244);
     background-size: cover;
     text-align: center;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.intro *{
+    margin-left: auto;
+    margin-right: auto;
 }
 .intro-logo {
     width: 6em;
@@ -35,11 +41,14 @@ body {
     max-width: 70%;
     font-size: 2.2rem;
     font-weight: 600;
-    margin: 2em auto;
-    text-align: center;
 }
 .intro-h1 p {
     margin: 0;
+}
+.intro>p {
+    font-weight: 600;
+    font-size: .75rem;
+    letter-spacing: .1em;
 }
 
 /* ----RESERVATION PAGE ----
@@ -48,8 +57,15 @@ body {
     width: 100%;
     text-align: center;
     font-size: 1rem;
+    margin: 0 auto;
 }
-
+.reservation-form {
+    margin: 2em auto 0;
+    padding-bottom: 2em;
+}
+.reservation-form h2 {
+    margin: 0;
+}
 /* ----RESERVATION PAGE ----
 ------ -INPUT & SUBMIT-------- */
 input {
@@ -64,7 +80,7 @@ input[type=number] {
 }
 
 .reserv-time-form {
-    margin: auto;
+    margin: 1em auto;
     width: 70%;
     /* padding: 0 2em; */
     display: flex;
@@ -76,8 +92,87 @@ input[type=number] {
 }
 .input-contact-form {
     width: 50%;
+    text-align: center;
+    font-size: .75rem;
+    
+}
+.input-request {
+    height: 5em;
+}
+.reserve-btn {
+    font-family: 'Raleway', sans-serif;
+    border-radius: 5px;
+    border: .5px solid gray;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    padding: .25em 1.5em;
+    cursor: pointer;
+    width: 50%;
+}
+.reserve-btn:hover,
+.reserve-btn:focus {
+    background-color: rgb(7, 7, 7);
+}
+
+
+/* ----RESERVATION PAGE ----
+--------CONTACT INFO-------- */
+.contact-time{
+    /* background-color: rgb(187, 186, 186); */
+}
+.resto-contact-time-info{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 1em 0;
+}
+.resto-contact{
+    width: 40%;
+    /* border: 1px solid red; */
+}
+.resto-time {
+    width: 47%;
+    border-left: 3px solid black;
+    padding-left: 1em;
+}
+.resto-contact-time-info h3 {
+    margin: 0 0 0.5em;
+    font-size: 1.2rem;
+}
+.resto-contact-time-info p {
+    margin: 0.25em;
+    font-size: .75rem;
 }
 .resto-contact-icon {
-    width: 1.5em;
+    margin-top: .25em;
+    width: 1em;
     object-fit: cover;
+    display: inline-block;
+}
+
+@media (min-width: 700px) {
+    .reservation-container {
+        flex-direction: row;
+    }
+    .intro {
+        width: 70vw;
+        height: 100vh;
+        border: 1px solid green;
+    }
+    .reservation-main-content{
+    }
+    .reserv-time-form{
+        width: 90%;
+        max-width: 400px;
+        border: 1px solid magenta;
+    }
+    .contact-time{
+        background-color: white;
+    }
+    .resto-contact-time-info{
+        width: 70%;
+        max-width: 400px;
+    }
 }
