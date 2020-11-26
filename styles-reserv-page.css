@@ -16,7 +16,7 @@ body {
 --------INTRO PART --------- */
 .intro {
     min-height: 60vh;
-    background-image: url(images/maddi-bazzocco-qKbHvzXb85A-unsplash.jpg);
+    background-image: url(images/victoria-shes-wSh0Exrb62g-unsplash.jpg);
     background-color: #818181;
     background-position: center;
     background-repeat: no-repeat;
@@ -58,28 +58,38 @@ body {
     text-align: center;
     font-size: 1rem;
     margin: 0 auto;
+    background-color: black;
 }
 .reservation-form {
-    margin: 2em auto 0;
-    padding-bottom: 2em;
+    max-width: 400px;
+    margin: 2em auto;
+    padding: 1.5em;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
 }
 .reservation-form h2 {
     margin: 0;
+    font-size: 2rem;
+}
+.reservation-form p {
+    margin: .5em 0;
+    font-size: .75rem;
+    letter-spacing: 1px;
 }
 /* ----RESERVATION PAGE ----
 ------ -INPUT & SUBMIT-------- */
 label {
-    font-size: .75rem;
+    font-size: .65rem;
 }
 input {
     border-style: none;
-    background-color:rgba(144, 150, 173, 0.184);
-    border-radius: 5px;
-    height: 1.75em;
+    background-color:white;
+    border: .1px solid gray;
+    height: 2em;
     margin: .25em 0;
 }
 input[type=number] {
-    height: 1.55em;
+    height: 1.82em;
 }
 
 .reserv-time-form {
@@ -94,10 +104,9 @@ input[type=number] {
     margin-bottom: 1em;
 }
 .input-contact-form {
-    width: 50%;
+    width: 49%;
     text-align: center;
     font-size: .75rem;
-    
 }
 .input-request {
     height: 5em;
@@ -111,6 +120,7 @@ input[type=number] {
     padding: .25em 1.5em;
     cursor: pointer;
     width: 50%;
+    height: 2.75em;
 }
 .reserve-btn:hover,
 .reserve-btn:focus {
@@ -121,7 +131,7 @@ input[type=number] {
 /* ----RESERVATION PAGE ----
 --------CONTACT INFO-------- */
 .contact-time{
-    /* background-color: rgb(187, 186, 186); */
+    color: white;
 }
 .resto-contact-time-info{
     display: flex;
@@ -132,12 +142,13 @@ input[type=number] {
     padding: 1em 0;
 }
 .resto-contact{
-    width: 40%;
+    width: 47%;
+    padding-right: 1em;
     /* border: 1px solid red; */
 }
 .resto-time {
     width: 47%;
-    border-left: 3px solid black;
+    border-left: 3px solid white;
     padding-left: 1em;
 }
 .resto-contact-time-info h3 {
@@ -145,14 +156,19 @@ input[type=number] {
     font-size: 1.2rem;
 }
 .resto-contact-time-info p {
-    margin: 0.25em;
+    margin: 0.1em;
     font-size: .75rem;
 }
 .resto-contact-icon {
-    margin-top: .25em;
+    margin: .25em;
     width: 1em;
     object-fit: cover;
-    display: inline-block;
+}
+.tripadvisor-icon{
+    width: 1.2em;
+}
+.resto-contact-icons a {
+    text-decoration: none;
 }
 
 @media (min-width: 850px) {
@@ -162,17 +178,17 @@ input[type=number] {
     .intro {
         width: 70%;
         min-height: 100vh;
-        border: 1px solid green;
     }
     .intro-h1{
         font-size: 3rem;
     }
-    .reserv-time-form{
-        width: 90%;
-        /* border: 1px solid magenta; */
+    .reservation-form {
+        width: 70%;
     }
-    .contact-time{
-        background-color: white;
+    .reservation-main-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .resto-contact-time-info{
         width: 70%;
