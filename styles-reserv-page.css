@@ -27,6 +27,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: .5em;
 }
 .intro *{
     margin-left: auto;
@@ -35,7 +36,6 @@ body {
 .intro-logo {
     width: 6em;
     object-fit: cover;
-    margin-top: .5em;
 }
 .intro-h1{
     max-width: 70%;
@@ -43,7 +43,7 @@ body {
     font-weight: 600;
 }
 .intro-h1 p {
-    margin: 0;
+    margin:0;
 }
 .intro>p {
     font-weight: 600;
@@ -155,7 +155,7 @@ input[type=number] {
     display: inline-block;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 850px) {
     .reservation-container {
         flex-direction: row;
     }
@@ -164,7 +164,8 @@ input[type=number] {
         min-height: 100vh;
         border: 1px solid green;
     }
-    .reservation-main-content{
+    .intro-h1{
+        font-size: 3rem;
     }
     .reserv-time-form{
         width: 90%;
