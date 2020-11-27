@@ -108,7 +108,6 @@ input:focus {
     margin-bottom: 1em;
     
 }
-
 .reserv-contact-form {
     margin-bottom: 1em;
 }
@@ -130,10 +129,14 @@ input:focus {
     cursor: pointer;
     width: 50%;
     height: 2.75em;
+    text-transform: uppercase;
+    letter-spacing: 2px;;
+    font-size: .65rem;
 }
 .reserve-btn:hover,
 .reserve-btn:focus {
-    background-color: rgb(7, 7, 7);
+    background-color:black;
+    font-weight: 700;
 }
 .back-homepage {
     font-size: .75rem;
