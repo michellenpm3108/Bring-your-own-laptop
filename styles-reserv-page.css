@@ -132,18 +132,26 @@ input:focus {
     text-transform: uppercase;
     letter-spacing: 2px;;
     font-size: .65rem;
+    transform: scale(1);
 }
 .reserve-btn:hover,
 .reserve-btn:focus {
     background-color:black;
     font-weight: 700;
+    transform: scale(1.05);
+    transition: transform 250ms;
 }
 .back-homepage {
     font-size: .75rem;
     margin-top: .75em;
 }
+.back-homepage:hover,
+.back-homepage:focus {
+    font-weight: bold;
+}
 .back-homepage a:active {
     color: rgb(230, 120, 138);
+    font-weight: bold;
 }
 /* ----RESERVATION PAGE ----
 --------CONTACT INFO-------- */
