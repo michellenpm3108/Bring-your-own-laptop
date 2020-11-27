@@ -18,11 +18,11 @@ body {
     min-height: 60vh;
     background-image: url(images/victoria-shes-wSh0Exrb62g-unsplash.jpg);
     background-color: #818181;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-blend-mode:multiply;
     color: rgb(245, 244, 244);
-    background-size: cover;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -59,7 +59,6 @@ body {
     font-size: 1rem;
     margin: 0 auto;
     background-color: black;
-background: radial-gradient(circle, rgba(92,92,92,1) 41%, rgba(0,0,0,1) 89%);
 }
 .reservation-form {
     max-width: 400px;
@@ -73,7 +72,7 @@ background: radial-gradient(circle, rgba(92,92,92,1) 41%, rgba(0,0,0,1) 89%);
     font-size: 2rem;
 }
 .reservation-form>p {
-    margin: .5em 0;
+    margin-top: .5em;
     font-size: .75rem;
     letter-spacing: 1px;
 }
