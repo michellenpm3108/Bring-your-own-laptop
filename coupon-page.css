@@ -30,13 +30,20 @@ body {
     height: 100%;
     justify-self: right;
 }
+.bigger-img{
+    grid-row: 2/5;
+    height: 90%;
+}
 .coupon-title {
     grid-row: 3/5;
     grid-column: 2;
-    font-size: 1.75rem;
+    font-size: 1rem;
     text-transform: uppercase;
 }
-
+.coupon-title span {
+    display: block;
+    font-size: 1.75rem
+}
 .coupon-body {
     grid-row: 4;
     grid-column: 4/-2;
