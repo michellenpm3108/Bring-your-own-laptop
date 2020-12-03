@@ -1,19 +1,88 @@
-
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
-    color: black;
+    font-family: 'Raleway', sans-serif;
 }
-.coupons {
+/* ----MAIN PAGE ----
+------ BACKGROUND ---- */
+.background {
+    min-height: 100vh;
+    background-image: url("images/edgar-castrejon-vegan.jpg");
+    background-color: #404040;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    /* border: 1px red solid; */
     display: flex;
     flex-direction: column;
 }
+/* ----MAIN PAGE ----
+------ TOP PART ---- */
+.head {
+    text-align: center;
+    margin-top: .5em;
+}
+.logo {
+    height: 10vh; 
+    object-fit: cover;
+}
+/* ----MAIN PAGE ----
+------ NAVIGATION---- */
+nav {
+    margin-top: 2em;
+    background-color: rgba(95, 95, 95, 0.496);
+    padding: .5em;
+    /* border: 1px solid green; */
+}
+nav ul {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+}
+nav li {
+    list-style: none;
+}
+nav li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .75rem;
+    color: white;
+    opacity: .6;
+}
+
+nav li a:hover,
+nav li a:focus {
+    opacity: 1;
+}
+
+/* ----COUPON PAGE ----
+------COUPONS STYLE---- */
+.coupons {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.476);
+    margin-top: 2em;
+    margin-bottom: 2em
+}
 .coupon {
-    width: 90vw;
-    border: 3px dashed black;
+    width: 80vw;
+    border: 5px dotted rgba(255, 255, 255, 0.721);
     display: grid;
-    grid-template: 4vw 30px 50px auto auto 4vw / 4vw 50vw 2vw 30vw 4vw;
+    grid-template: 4vw 30px 50px auto auto 4vw / 4vw 40vw 2vw 30vw 4vw;
     align-items: start;
     margin: 1em auto;
+    background: black;
+    color: white;
 }
 .coupon-logo {
     grid-row: 2/3;
@@ -63,8 +132,8 @@ body {
     grid-column: 4/-2;
     text-decoration: none;
     border: 1px solid black;
-    color: white;
-    background: black;
+    color: black;
+    background: white;
     padding: .5em 1.5em;
     align-self: start;
     font-size: .75rem;
@@ -73,13 +142,51 @@ body {
     letter-spacing: 2px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
     .coupons {
         flex-direction: row;
         flex-wrap: wrap;
     }
     .coupon {
-        width: 45vw;
-        grid-template: 1vw 30px 50px auto auto 1vw / 1vw 26vw 1vw 15vw 1vw;
+        width: 65vw;
+        grid-template: 1vw 30px 50px auto auto 1vw / 1vw 36vw 1vw 25vw 1vw;
+    }
+}
+
+@media (min-width: 900px) {
+    .coupons {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .coupon {
+        width: 35vw;
+        grid-template: 1vw 30px 50px auto auto 1vw / 1vw 19vw 1vw 12vw 1vw;
+    }
+}
+
+
+/* ----MAIN PAGE ----
+------ FOOTER---- */
+footer {
+    background-color: rgba(95, 95, 95, 0.496);
+    padding: .35em 3.5em;
+    text-align: center;
+    margin-top: auto;
+}
+footer p {
+    color: white;
+    opacity: .6;
+    font-size: .5rem;
+}
+
+@media (min-width: 700px) {
+    nav ul{
+        width: 70%;
+    }
+}
+
+@media (min-width: 900px) {
+     footer p {
+        font-size: .75rem;
     }
 }
