@@ -140,8 +140,14 @@ nav li a:focus {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
+    transform: scale(1);
+    transition: transform 250ms;
 }
-
+.coupon-btn:hover,
+.coupon-btn:focus {
+    font-weight: 800;
+    transform: scale(1.05);
+}
 @media (min-width: 700px) {
     .coupons {
         flex-direction: row;
